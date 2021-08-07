@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "47cebf3053c8acb0",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ec6840f58e0b736",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6344535c21499b75",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8a9e89b078b091d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26258f6b0c47c21b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a051cd3ec2484911",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d4339c5f922e60cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0257a7e6abaa9cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7285f3c72e0a44e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9ec6840f58e0b736",
+  "lastOpenFiles": [
+    "2021-03-14-commit-github-and-gitee.md",
+    "2021-05-04-spring01.md",
+    "2021-04-20-course-c-01.md",
+    "2021-07-18-spring.md",
+    "2021-04-18-ssl.md",
+    "2021-04-08-Node-gulp-error.md"
+  ]
+}
