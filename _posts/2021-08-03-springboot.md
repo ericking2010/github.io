@@ -493,3 +493,60 @@ public class User implements Serializable {
 ```
 
 
+## 微服务架构的4个核心问题
+1. 服务很多，客户端该怎么访问？
+2. 这么多服务，服务之间如何通信？
+3. 这么多服务，如何治理？
+4. 服务挂了怎么办？
+
+解决方案：
+1. Spring Cloud NetFlix : 一站式解决方案（2018年12月停止维护）
+   API：api网关，zuul组件
+   通信：Feign --- HttpClient ： Http通信方式，同步，阻塞
+   服务注册发现： Eureka
+   熔断机制： Hystrix
+
+2. Spring Cloud Alibaba : 一站式解决方案，更简单。
+   
+
+3. Dubbo + ZooKeeper : 半自动，需要整合别人的。
+   API： 没有，找第三方组件，或者自己实现
+   通信：Dubbo：高性能的基于Java的RPC通信框架
+   服务注册发现：ZooKeeper
+   熔断机制：没有，借助Hystrix
+
+
+新概念：服务网格（Server Mesh）istio
+
+
+## 常见面试题
+1. 什么是微服务？
+2. 微服务之间是如何独立通讯的？
+3. SpringCloud和Dubbo有哪些区别？
+4. SpringBoot和SpringCloud，请你谈谈对他们的理解
+5. 什么是服务熔断？什么是服务降级？
+6. 微服务的优缺点分别是什么？说下你在项目开发中遇到的坑。
+7. 你所知道的微服务技术栈有哪些？请列举一二
+8. Nacos、Erueka和ZooKeeper都可以提供服务注册与发现的功能，请说说两个的区别。
+
+
+## 微服务技术栈
+|微服务条目|落地技术|
+|:---|:---|
+|服务开发|SpringBoot,Spring,SpringMVC|
+|服务配置与管理|Netflix公司的Archaius，阿里的Diamond等|
+|服务注册与发现|Eureka、Consul、ZooKeeper、Nacos等|
+|服务调用|Rest、RPC、gRPC|
+|服务熔断器|Hystrix、Envoy等|
+|负载均衡|Ribbon、Nginx等|
+|服务接口调用（客户端调用服务的简化工具）|Feign等|
+|消息队列|Kafka、RabbitMQ、ActiveMQ|
+|服务配置中心管理|SpringCloudConfig、Chef等|
+|服务路由（API网关）|Zuul等|
+|服务监控|Zabbix、Nagios、Metrics、Specatator等|
+|全链路追踪|Zipkin、Brave、Dapper等|
+|服务部署|Docker、OpenStack、Kubernetes|
+|数据流操作开发包|SpringCloudStream（封装与Redis、Rabbit、Kafka等发送接收消息）|
+|时间消息总线|SpringCloudBus|
+|||
+
